@@ -14,8 +14,3 @@ spring 공부 :: 의존객체 자동주입
 ### Resource
 1. 생성자에는 못쓰고, property 또는 method만 사용가능
 2. Resource 쓸 때 import javax.annotation.Resource 추가 해도 빨간줄 생기면 pom.xml dependency 추가
-	<dependency>
-		<groupId>javax.annotation</groupId>
-		<artifactId>javax.annotation-api</artifactId>
-		<version>1.3.1</version>
-	</dependency>
