@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
@@ -13,11 +13,9 @@
 	<bean id="wordDao" class="com.word.dao.WordDao" >
 		<!-- <qualifier value="usedDao"/> -->
 	</bean>
-	<bean id="wordDao2" class="com.word.dao.WordDao" />
-	<bean id="wordDao3" class="com.word.dao.WordDao" />
 	
-	<bean id="registerService" class="com.word.service.WordRegisterServiceUseAutowired" />
+	<bean id="registerService" class="com.word.service.WordRegisterService" />
 	
-	<bean id="searchService" class="com.word.service.WordSearchServiceUseAutowired" />
+	<bean id="searchService" class="com.word.service.WordSearchService" />
 	
 </beans>

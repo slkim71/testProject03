@@ -1,5 +1,6 @@
 package com.word.dao;
 
+// 아직 연결한 DB가 없으니까 Map 데이터를 사용한다
 import java.util.HashMap;
 import java.util.Map;
 
