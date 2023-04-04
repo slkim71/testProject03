@@ -1,4 +1,21 @@
 # testProject03
+
+20230405
+spring 공부 :: 의존객체 선택
+
+동일한 객체가 두 개 이상인 경우 스프링컨테이너는 자동주입대상객체를 판단하지 못해서 exception 발생함!!
+
+### qualifier 사용
+1. @Autowired
+   @Qualifier('usedDao')
+   private WordDao wordDao;
+   
+### inject 사용
+1. Autowired 와 거의 동일함
+   
+
+------------------------------------------------------------------------------------
+20230404
 spring 공부 :: 의존객체 자동주입
 
 
