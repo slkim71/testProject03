@@ -1,13 +1,25 @@
 package com.word.service;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 import com.word.WordSet;
 import com.word.dao.WordDao;
 
 public class WordSearchService {
+//	@Autowired
+//	@Qualifier("usedDao")
+	@Inject
+	@Named(value="wordDao1")
 	private WordDao wordDao;
 	
-	@Autowired
+	public WordSearchService() {
+		
+	}
+//	@Autowired
 	public WordSearchService(WordDao wordDao) {
 		this.wordDao = wordDao;
 	}

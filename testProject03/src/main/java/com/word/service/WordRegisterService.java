@@ -1,14 +1,22 @@
 package com.word.service;
 
-//mport org.springframework.beans.factory.annotation.Autowired;
-import javax.annotation.Resource;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+//import javax.annotation.Resource;
 import com.word.WordSet;
 import com.word.dao.WordDao;
 
 public class WordRegisterService {
 	// 이런식으로 생성자 외에 property에도 Autowired를 넣어줄 수 있다
-	//	@Autowired
-	@Resource
+//	@Autowired
+//	@Qualifier("usedDao")
+//	@Resource
+	@Inject
+	@Named(value="wordDao1")
 	private WordDao wordDao;
 	
 	// 단, property나 method에 Autowird를 사용하고 싶다면 반.드.시 default 생성자를 명시해줘야한다
